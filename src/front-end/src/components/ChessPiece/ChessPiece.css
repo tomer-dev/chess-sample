@@ -1,0 +1,9 @@
+.chess-piece{
+    max-width: 70%;
+    max-height: 70%;
+    position: absolute;
+    /* Center align the piece */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

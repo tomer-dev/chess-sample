@@ -1,0 +1,16 @@
+.board-container{
+    display: grid;
+    margin: auto;
+    width:100vh;
+}
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+    height: 12.5vh;
+    width: 100vh;
+    line-height: 12.5vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    user-select: none;
+  }

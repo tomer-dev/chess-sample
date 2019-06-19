@@ -1,0 +1,7 @@
+.cell-container{
+    height: 100%;
+    width: 12.5%;
+    display: flex;
+    position: relative;
+}
+

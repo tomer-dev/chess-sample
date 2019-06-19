@@ -1,0 +1,13 @@
+.cell-container{
+    min-width:12.5vh;
+    max-height: 12.5vh;
+    min-height: 100%;
+    display: inline-block;
+    flex: 1;
+    flex-grow: 0;
+    
+}   
+
+.colored{
+    background-color: darkgray;
+}
