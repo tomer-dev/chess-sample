@@ -26,10 +26,9 @@ class ChessGame extends Component{
             baseURL: Constants.baseUrl,
             method: 'GET'
            })
-           .then(res => res.data)
            .then(res=>{
-            res &&
-            this.setState((state)=> {return {chessPieces: res}});
+            res && res.data && res.data.chessPieces &&
+            this.setState((state)=> {return {chessPieces: res.data.chessPieces}});
            })
     }
 

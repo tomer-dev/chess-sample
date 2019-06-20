@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "axios": "^0.19.0",
     "normalize.css": "^8.0.1",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dnd": "^8.0.0",
     "react-dnd-html5-backend": "^8.0.0",
@@ -14,8 +15,9 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "cd src/front-end && react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run build && node src/back-end/server.js",
+    "build": "cd src/front-end && npm run build",
+    "client": "cd src/front-end && react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "nodemon src/back-end/server.js"
@@ -36,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "nodemon": "^1.19.1"
   }
 }
